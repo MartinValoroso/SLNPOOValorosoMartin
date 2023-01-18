@@ -8,6 +8,7 @@ using WindowsEFDatos.Models;
 
 namespace WindowsEFDatos.Data
 {
+
     public class DBLineaAerea : DbContext
 
     {
