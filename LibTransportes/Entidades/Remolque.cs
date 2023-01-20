@@ -8,11 +8,11 @@ namespace LibTransportes.Entidades
 {
     public class Remolque
     {
-        public Camion Camion { get; set; }
+       
 
-        public int remolque { get; set; }
-
-
+        public string remolque { get; set; }
+        
+        
 
     }
 }

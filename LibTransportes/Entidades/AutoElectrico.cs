@@ -34,7 +34,7 @@ namespace LibTransportes.Entidades
             return "El auto eléctrico esta frenando";
         }
 
-        public override string imprimir()
+        public override string ToString()
         {
             return base.imprimir() + $"\nEl auto tiene una autonomía de  : {AutonomiaEnKm}" + $"\nEl auto tiene {Puertas} puertas ";
 

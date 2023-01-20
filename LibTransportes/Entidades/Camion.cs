@@ -44,11 +44,14 @@ namespace LibTransportes.Entidades
 
         public override string ToString()
         {
-            return $"Peso Carga máxima : {PesoCargaMax}\n" +
+            return base.imprimir() + $"Peso Carga máxima : {PesoCargaMax}\n" +
+                   $"Cant Acoplados : {CantAcoplados}\n";
+
+                /*$"Peso Carga máxima : {PesoCargaMax}\n" +
                    $"Cant Acoplados : {CantAcoplados}\n" +
                    $"Marca: {Marca}\n" +
                    $"Ruedas: {Ruedas}\n" +
-                   $"Vel. Máxima: {Velocidadmax}";
+                   $"Vel. Máxima: {Velocidadmax}";*/
 
         }
     }

@@ -20,14 +20,24 @@ namespace PresentacionVehiculo1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Camion camion = new Camion(7530, "2", "Honda", "16", "145");
-            MessageBox.Show($"Camion:\n{camion}" + $"Aceleración : {camion.Acelerar()}" + $"Frenar: {camion.Frenar()}");
+            Camion camion = new Camion(7530, "2", "Honda", "16", "145")
+            {
+             Remolque = new Remolque() { remolque = "Este camión tiene remolque"}
+            };
+           
+            MessageBox.Show($"Camion:\n{camion}" + $"Aceleración : {camion.Acelerar()}" + $"Frenar: {camion.Frenar()}" + $"{camion.Remolque.remolque}");
         }
 
-        private void btnQuitarRemolque_Click(object sender, EventArgs e)
+        
+
+        private void QuitarRemolque(object sender, EventArgs e)
         {
-            Camion camion2 = new Camion(5430, "1", "mercedes", "16", "170");
-            MessageBox.Show($"Camion: {camion2}" + $"\n{camion2.QuitarRemolque()}");
+
+            Camion camion = new Camion(7530, "2", "Honda", "16", "145")
+            {
+                Remolque = new Remolque() { remolque = "Este camión tiene remolque" }
+            };
+            MessageBox.Show($"Camion: {camion}" + $"\n{camion.QuitarRemolque()}");
         }
     }
 }

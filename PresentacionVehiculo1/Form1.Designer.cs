@@ -44,13 +44,13 @@
             // 
             // btnQuitarRemolque
             // 
-            this.btnQuitarRemolque.Location = new System.Drawing.Point(221, 271);
+            this.btnQuitarRemolque.Location = new System.Drawing.Point(604, 101);
             this.btnQuitarRemolque.Name = "btnQuitarRemolque";
             this.btnQuitarRemolque.Size = new System.Drawing.Size(333, 113);
             this.btnQuitarRemolque.TabIndex = 1;
             this.btnQuitarRemolque.Text = "Quitar Remolque";
             this.btnQuitarRemolque.UseVisualStyleBackColor = true;
-            this.btnQuitarRemolque.Click += new System.EventHandler(this.btnQuitarRemolque_Click);
+            this.btnQuitarRemolque.Click += new System.EventHandler(this.QuitarRemolque);
             // 
             // Form1
             // 
